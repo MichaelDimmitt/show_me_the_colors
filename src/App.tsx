@@ -1,6 +1,5 @@
-import { useState } from 'react'
+import 'react';
 import './App.css'
-import React from 'react';
 import { listOfColors } from './colorsFromHex';
 
 function invertColor(hex: string, bw: boolean) {
@@ -14,7 +13,7 @@ function invertColor(hex: string, bw: boolean) {
   if (hex.length !== 6) {
       throw new Error('Invalid HEX color.');
   }
-  var r = parseInt(hex.slice(0, 2), 16),
+  const r = parseInt(hex.slice(0, 2), 16),
       g = parseInt(hex.slice(2, 4), 16),
       b = parseInt(hex.slice(4, 6), 16);
   if (bw) {
@@ -30,9 +29,9 @@ function invertColor(hex: string, bw: boolean) {
   // pad each with zeros and return
   return "#" + padZero(red) + padZero(green) + padZero(blue);
 }
-function padZero(str: any, len?: any) {
+function padZero(str: string, len?: number) {
   len = len || 2;
-  var zeros = new Array(len).join('0');
+  const zeros = new Array(len).join('0');
   return (zeros + str).slice(-len);
 }
 
@@ -43,7 +42,7 @@ export const DisplaySvgs = () => {
               <h1>Color Section</h1>
               <section>
                   <div className='d-flex gap-3 p-2 flex-wrap' style={{justifyContent: 'center'}}>
-                      {listOfColors.map(([colorName, hexColor]: any) => {
+                      {listOfColors.map(([colorName, hexColor]) => {
                           return <div className='d-flex flex-column border rounded p-2' style={{ width: '130px' }}>
                               <div>{colorName}</div>
                               <div>{hexColor}</div>
