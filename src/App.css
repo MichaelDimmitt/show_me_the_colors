@@ -1,5 +1,5 @@
 .d-flex {
-  display: flex
+  display: flex;
 }
 .flex-wrap {
   flex-wrap: wrap;
@@ -7,14 +7,17 @@
 .flex-column {
   flex-direction: column;
 }
-.gap-4 {
+.gap-3 {
   gap: 2rem
 }
 .p-2 {
   padding: 0.5rem;
 }
+.p-3 {
+  padding: 1rem;
+}
 .border {
-  border: "solid black"
+  border: solid black;
 }
 .border-3 {
   border-width: 3px;

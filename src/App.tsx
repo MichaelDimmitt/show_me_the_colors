@@ -42,9 +42,9 @@ export const DisplaySvgs = () => {
           <div className='border border-3 rounded' style={{ backgroundColor: 'whitesmoke', width: '75%', padding: "2rem" }} >
               <h1>Color Section</h1>
               <section>
-                  <div className='d-flex gap-4 p-2 flex-wrap' style={{justifyContent: 'center'}}>
+                  <div className='d-flex gap-3 p-2 flex-wrap' style={{justifyContent: 'center'}}>
                       {listOfColors.map(([colorName, hexColor]: any) => {
-                          return <div className='d-flex flex-column' style={{ width: '123px' }}>
+                          return <div className='d-flex flex-column border rounded p-2' style={{ width: '130px' }}>
                               <div>{colorName}</div>
                               <div>{hexColor}</div>
                               <div className="rounded px-2" style={{ backgroundColor: hexColor, color: invertColor(hexColor, true) }}>color</div>
