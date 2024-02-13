@@ -37,16 +37,16 @@ function padZero(str: string, len?: number) {
 
 export const DisplaySvgs = () => {
   return (<>
-      <div style={{  backgroundColor: 'gray', paddingTop: '4rem', paddingLeft: '4rem' }}>
-          <div className='border border-3 rounded' style={{ backgroundColor: 'whitesmoke', width: '75%', padding: "2rem" }} >
+      <div style={{  backgroundColor: 'gray', padding: '4rem' }}>
+          <div className='border border-3 rounded' style={{ backgroundColor: 'whitesmoke', padding: "2rem" }} >
               <h1>Color Section</h1>
               <section>
                   <div className='d-flex gap-3 p-2 flex-wrap' style={{justifyContent: 'center'}}>
                       {listOfColors.map(([colorName, hexColor]) => {
-                          return <div className='d-flex flex-column border rounded p-2' style={{ width: '130px' }}>
+                          return <div className='d-flex flex-column border rounded p-2' style={{ width: '160px' }}>
                               <div>{colorName}</div>
                               <div>{hexColor}</div>
-                              <div className="rounded px-2" style={{ backgroundColor: hexColor, color: invertColor(hexColor, true) }}>color</div>
+                              <div className="rounded px-2 border rounded" style={{ backgroundColor: hexColor, color: invertColor(hexColor, true) }}>color</div>
                           </div>
                       })}
                   </div>
