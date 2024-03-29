@@ -1,30 +1,15 @@
-# React + TypeScript + Vite
+Show me the colors:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. export all of your colors throughout your app from a single color file
+2. import them throughout your app
+3. show_me_the_colors is an auto generated visual representation of those colors.
 
-Currently, two official plugins are available:
+This auto generated visial document can also import other files and auto load svgs, logos, components, icons.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Always know what assets are in your application to be able to communicate and compare with your designer's design system.
 
-## Expanding the ESLint configuration
+![image](https://github.com/MichaelDimmitt/show_me_the_colors/assets/11463275/4181ca15-4ee9-4456-bf79-fd2ec9fdd429)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+See it in action!
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Clone down this project and run `npm run dev`
