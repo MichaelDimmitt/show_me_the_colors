@@ -1,4 +1,4 @@
-Show me the colors:
+## Show me the colors:
 
 1. export all of your colors throughout your app from a single color file
 2. import them throughout your app
@@ -14,5 +14,5 @@ See it in action!
 
 Clone down this project and run `npm run dev`
 
-Link: (Sorting by hex color does group the colors to a certain extent)
+## Link: (Sorting by hex color does group the colors to a certain extent)
 https://www.w3schools.com/colors/colors_hex.asp
