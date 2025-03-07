@@ -13,3 +13,6 @@ Always know what assets are in your application to be able to communicate and co
 See it in action!
 
 Clone down this project and run `npm run dev`
+
+Link: (Sorting by hex color does group the colors to a certain extent)
+https://www.w3schools.com/colors/colors_hex.asp
